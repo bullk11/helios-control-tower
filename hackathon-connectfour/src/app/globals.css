@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Tokens del Connect Design System, copiados de
+ * hackathon/_extracted/_ds/connect-design-system-<hash>/tokens/*.css
+ * Se exponen como custom properties para poder escribir var(--connect-azul)
+ * igual que en el mockup.
+ */
+:root {
+  --connect-naranja: #f15b2b;
+  --connect-amarillo: #f4bb2b;
+  --connect-azul: #001d3d;
+  --connect-blanco: #ffffff;
+  --connect-gris: #f1f1f1;
+
+  --naranja-700: #c8431b;
+  --naranja-600: #d94f23;
+  --naranja-100: #fde7df;
+  --naranja-050: #fef3ee;
+
+  --amarillo-600: #d9a31c;
+  --amarillo-050: #fef9eb;
+
+  --azul-600: #073460;
+  --azul-300: #5b7390;
+  --azul-100: #d3dae2;
+  --azul-050: #edf0f4;
+
+  --gris-050: #fafafa;
+  --gris-100: #f1f1f1;
+  --gris-200: #e4e4e4;
+  --gris-300: #cfcfcf;
+  --gris-400: #a8a8a8;
+  --gris-500: #767676;
+  --gris-600: #4d4d4d;
+
+  --estado-exito: #1f8a5b;
+  --estado-error: #c8431b;
+
+  --surface-page: var(--connect-blanco);
+  --text-strong: var(--connect-azul);
+  --text-body: #213040;
+  --text-muted: var(--gris-500);
+  --border-subtle: var(--gris-200);
+  --border-default: var(--gris-300);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--surface-page);
+  color: var(--text-body);
+  font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--connect-naranja);
+  outline-offset: 2px;
+}
