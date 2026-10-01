@@ -1,0 +1,123 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Helios Control Tower",
+  "colors": {
+    "primary": "#0F172A",
+    "light": "#3B82F6",
+    "dark": "#1E40AF"
+  },
+  "favicon": "/favicon.ico",
+  "navigation": {
+    "pages": [
+      {
+        "group": "Inicio",
+        "pages": [
+          "index",
+          "quickstart",
+          "arquitectura"
+        ]
+      },
+      {
+        "group": "Modelo de dominio",
+        "pages": [
+          "dominio/etapas",
+          "dominio/grupos-y-colas",
+          "dominio/propiedad-del-caso",
+          "dominio/auditoria",
+          "dominio/inteligencia"
+        ]
+      },
+      {
+        "group": "Integración con Helios API",
+        "pages": [
+          "api/autenticacion",
+          "api/servicios",
+          "api/llamadas-entrantes",
+          "api/notas-y-chats",
+          "api/check-in-reminders",
+          "api/monitor"
+        ]
+      },
+      {
+        "group": "Componentes UI",
+        "pages": [
+          "ui/tablero-control-tower",
+          "ui/detalle-del-caso",
+          "ui/llamada-entrante",
+          "ui/dashboard-capacidad",
+          "ui/navbar-y-design-system"
+        ]
+      },
+      {
+        "group": "Guía de desarrollo",
+        "pages": [
+          "desarrollo/configuracion",
+          "desarrollo/modo-mock-vs-live",
+          "desarrollo/variables-de-entorno",
+          "desarrollo/selftest"
+        ]
+      },
+      {
+        "group": "Gaps y roadmap",
+        "pages": [
+          "gaps/propiedad-del-caso",
+          "gaps/grupos-y-configuracion",
+          "gaps/etapa-como-campo",
+          "gaps/filtrado-servidor",
+          "gaps/realtime",
+          "gaps/seguridad"
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Prototipo",
+          "href": "http://localhost:4300/control-tower",
+          "icon": "rocket"
+        },
+        {
+          "anchor": "Helios API (staging)",
+          "href": "https://helios-api-stg.apps-connectassistance.com",
+          "icon": "server"
+        }
+      ]
+    }
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/connect-assistance"
+      }
+    ]
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "claude",
+      "cursor",
+      "vscode"
+    ]
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/connect-assistance"
+    }
+  },
+  "search": {
+    "location": "body"
+  },
+  "api": {
+    "baseUrl": "https://helios-api-stg.apps-connectassistance.com"
+  },
+  "tabs": [
+    {
+      "id": "api",
+      "name": "API Reference",
+      "url": "api"
+    }
+  ]
+}
